@@ -10,4 +10,4 @@ COPY . .
 
 ENV TELEGRAM_BOT_TOKEN="7629046804:AAEofEIUFWpWKF3-wG4RNb3dra68ViYbrnE"
 
-CMD["python", "main.py"]
+CMD ["python3", "main.py"]
