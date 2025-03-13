@@ -7,7 +7,7 @@ load_dotenv()
 TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
 
 bot = telebot.TeleBot(TOKEN)
-
+print("Бот запустился успешно")
 
 @bot.message_handler(commands=['start'])
 def handle_start(message):
@@ -15,3 +15,4 @@ def handle_start(message):
     bot.reply_to(message,f'Привет {user_name}, я простой бот для того чтобы посмотреть как работает продакшн окружение')
 
 
+bot.polling(True)
